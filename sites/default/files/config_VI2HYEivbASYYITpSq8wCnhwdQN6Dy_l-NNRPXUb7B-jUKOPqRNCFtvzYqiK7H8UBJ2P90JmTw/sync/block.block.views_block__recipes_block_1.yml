@@ -1,0 +1,24 @@
+uuid: d2d8a0df-5277-4b1b-8081-63ed34d9fdfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recipes
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__recipes_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:recipes-block_1'
+settings:
+  id: 'views_block:recipes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

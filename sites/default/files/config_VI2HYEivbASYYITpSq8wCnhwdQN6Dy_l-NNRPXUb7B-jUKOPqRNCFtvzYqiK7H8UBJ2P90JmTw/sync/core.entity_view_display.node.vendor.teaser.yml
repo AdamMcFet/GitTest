@@ -1,0 +1,35 @@
+uuid: 2383bb11-ec0a-4eb6-9fa9-2c710c61e0fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vendor.body
+    - field.field.node.vendor.field_main_image
+    - field.field.node.vendor.field_vendor_url
+    - node.type.vendor
+  module:
+    - text
+    - user
+id: node.vendor.teaser
+targetEntityType: node
+bundle: vendor
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_main_image: true
+  field_vendor_url: true
+  langcode: true
